@@ -197,7 +197,7 @@ def write_even(input_file_path: str, output_file_path: str):
     try:
         with open(input_file_path, 'r') as input_file, open(output_file_path, 'w') as output_file:
             lines = input_file.readlines()
-            even_lines = lines[1::2]  # Select every second line starting from index 1
+            even_lines = lines[1::2] 
             output_file.writelines(even_lines)
     except FileNotFoundError:
         print("Input file not found.")
